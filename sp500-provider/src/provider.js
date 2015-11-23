@@ -5,26 +5,32 @@ var symbols = require( './symbols.json' );
 /*
  * Connect to Redis Pub Sub
  */
-var redisMsg = new RedisMsg( { 
-  port: 5672, 
-  host: 'localhost' 
+var redisMsg = new RedisMsg({
+	port: 6379, 
+	host: '52.29.184.11' 
 });
-redisMsg.on( 'ready', checkIfReady );
+
+redisMsg.on( 'ready', subscribeIfReady );
 
 /*
  * Connect to deepstream
  */
-var ds = deepstreamClient( 'localhost:6021' ).login();
-ds.on( 'ready', checkIfReady );
+var ds = deepstreamClient( '52.29.184.11:6021' ).login({}, subscribeIfReady);
 
-function checkIfReady() {
+/*
+* Get all prices
+*/
+function subscribeIfReady() {
 	if( ds.isReady && redisMsg.isReady ) {
-		subscribeToSymbols();
+		for( var i = 0; i < symbols.length; i++ ) {
+			redisMsg.subscribe( symbols[ i ], onData );
+		}
 	}
 }
 
-function subscribeToSymbols() {
-	for( var i = 0; i < symbols.length; i++ ) {
-		
-	}
+/*
+* Send data to deepstream
+*/
+function onData( data ) {
+	ds.record.getRecord( data.symbol ).set( data );
 }

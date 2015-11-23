@@ -1,0 +1,15 @@
+{
+  "name": "sp500-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/provider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "deepstream.io-client-js": "^0.3.5",
+    "deepstream.io-msg-redis": "^0.2.6"
+  }
+}
