@@ -21,5 +21,5 @@ redisMsg.once( 'ready', function(){
 // Send data to deepstream
 function onData( data ) {
 	var recordName = 'sp500/' + data.symbol;
-	ds.record.getRecord( data.symbol ).set( data );
+	ds.record.getRecord( recordName ).set( data );
 }
