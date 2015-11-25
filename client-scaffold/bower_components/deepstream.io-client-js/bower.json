@@ -1,0 +1,33 @@
+{
+  "name": "deepstream.io-client-js",
+  "version": "0.3.5",
+  "homepage": "http://deepstream.io",
+  "authors": [
+    "Wolfram Hempel <hempel.wolfram@gmail.com>"
+  ],
+  "description": "The browser and node client for deepstream.io",
+  "main": "dist/deepstream.min.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "deepstream",
+    "realtime",
+    "streaming"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test-node",
+    "test-page",
+    "test-unit",
+    "test-e2e",
+    ".travis.yml",
+    "Gruntfile.js",
+    "karma.conf.js"
+  ]
+}
