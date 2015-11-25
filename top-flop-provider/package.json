@@ -1,0 +1,15 @@
+{
+  "name": "top-flop-provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/provider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "deepstream.io-client-js": "latest",
+    "rethinkdb": "latest"
+  }
+}
