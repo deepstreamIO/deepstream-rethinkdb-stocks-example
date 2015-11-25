@@ -1,0 +1,15 @@
+{
+  "name": "deepstream-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "deepstream.io": "latest",
+    "deepstream.io-storage-rethinkdb": "latest"
+  }
+}

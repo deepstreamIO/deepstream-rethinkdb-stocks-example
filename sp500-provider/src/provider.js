@@ -32,5 +32,6 @@ function subscribeIfReady() {
 * Send data to deepstream
 */
 function onData( data ) {
+	var recordName = 'sp500/' + data.symbol;
 	ds.record.getRecord( data.symbol ).set( data );
 }
