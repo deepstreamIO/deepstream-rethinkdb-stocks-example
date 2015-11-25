@@ -9,7 +9,9 @@ server.set( 'tcpHost', 6021 );
 
 server.set( 'storage', new RdbC({ 
   port: 28015, 
-  host: '52.29.184.11' 
+  host: '52.29.184.11',
+  splitChar: '/',
+  database: 'stockprices'
 }));
 
 
