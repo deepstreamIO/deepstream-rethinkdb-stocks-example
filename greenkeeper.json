@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "client-scaffold/bower_components/deepstream.io-client-js/package.json",
+        "deepstream-server/package.json",
+        "sp500-provider/package.json",
+        "top-flop-provider/package.json"
+      ]
+    }
+  }
+}
