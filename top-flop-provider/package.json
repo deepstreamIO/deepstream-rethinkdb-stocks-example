@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "deepstream.io-client-js": "latest",
+    "deepstream.io-client-js": "^2.3.0",
     "rethinkdb": "latest"
   }
 }
