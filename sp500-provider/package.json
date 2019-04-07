@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "deepstream.io-client-js": "^0.3.5",
-    "deepstream.io-msg-redis": "^0.2.6"
+    "deepstream.io-client-js": "^2.3.0",
+    "deepstream.io-msg-redis": "^1.0.5"
   }
 }
